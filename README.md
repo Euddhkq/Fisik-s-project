@@ -9,6 +9,6 @@ debloquer le combat final contre Melon Husk (version genetiquement modifiée de 
 
 ![image](https://github.com/Euddhkq/Fisik-s-project/assets/153919490/79bce235-6daf-4ee4-8397-1050d5078df0)
 
-Peu être aussi des jeux et non que des combats(?).
+Peu être aussi des jeux (on est dans un casino quand même) et non que des combats(?).
 
 Reste a voir en fonction du temps que ça prendra.
