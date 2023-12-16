@@ -1,4 +1,5 @@
 Nom d'équipe: Fisiks.
+
 Idée de projet: Jeu dans un casino en vue de dessus (comme le pokemon genesis):
 
 ![image](https://github.com/Euddhkq/Fisik-s-project/assets/153919490/50dda0c0-2681-4324-8ba7-9586ee4541e9)
@@ -9,4 +10,5 @@ debloquer le combat final contre Melon Husk (version genetiquement modifiée de 
 ![image](https://github.com/Euddhkq/Fisik-s-project/assets/153919490/79bce235-6daf-4ee4-8397-1050d5078df0)
 
 Peu être aussi des jeux et non que des combats(?).
+
 Reste a voir en fonction du temps que ça prendra.
