@@ -1,4 +1,4 @@
-Nom d'équipe: Fisiks.
+Nom d'équipe: Fisiks (Quentine + Alexis)
 
 Idée de projet: Jeu dans un casino en vue de dessus (comme le pokemon genesis):
 
