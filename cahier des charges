@@ -1,7 +1,7 @@
  Produire un cahier des charges
 Votre cahier des charges devra notamment répondre aux questions suivantes :
 1 - Quelle interface graphique sera utilisée ? Quelle bibliothèque graphique ?
-    
+    Plusieurs fenetres sur pygame
 2 - Utilisation du clavier et/ou de la souris ? Nombre d'utilisateurs ?
     Utilisation juste du clavier. 1 seul utilisateur
 3 - Présence d'une partie audio ? Création des musiques/bruitages ?
