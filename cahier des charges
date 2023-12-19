@@ -1,19 +1,21 @@
  Produire un cahier des charges
 Votre cahier des charges devra notamment répondre aux questions suivantes :
 1 - Quelle interface graphique sera utilisée ? Quelle bibliothèque graphique ?
-
+    
 2 - Utilisation du clavier et/ou de la souris ? Nombre d'utilisateurs ?
     Utilisation juste du clavier. 1 seul utilisateur
 3 - Présence d'une partie audio ? Création des musiques/bruitages ?
     Oui : 3 musiques différentes (combats, boss final, exploration) et 2 bruitages (gagner/perdre de l'argent) au minimum
 4 - Présence de menus ? Textuel ou graphique ?
-    
+    presence de menus avant l'activité qui presentent l'adversaire et les options de jeu (argent a miser et cote)
+    Ces menus seront textuels mais pourront devenir graphiques en fonction du temps restant a la fin.
 5 - Paramètres réglables par l'utilisateur ? Nom, difficulté, choix d'un personnage, ...
     choix du nom et d'un personnage : non
     niveau de difficulté : lors du choix de l'activité le joueur pourra choisir :
     -la quantité d'argent à miser (entre deux valeurs minimale et maximale) 
     -la cote qui influe sur le niveau de difficulté (exepmple un cote a 3 equivaut a moins de vie ou a des degats plus faibles que une cote à 2)
     L'objectif étant de favoriser la prise de risque du joueur
+    integrer au menu d'avant match
 6 - Evolutivité durant l'utilisation ? Différents niveaux, difficulté croissante, ...
     Il y aura plusieurs niveaux mais pas difficulté croissante ( a part boss final)
 7 - Programmation complexe ? IA pour PNJ, adversaire joué par l'ordinateur, ...
