@@ -1,0 +1,11 @@
+ Produire un cahier des charges
+Votre cahier des charges devra notamment répondre aux questions suivantes :
+1 - Quelle interface graphique sera utilisée ? Quelle bibliothèque graphique ?
+2 - Utilisation du clavier et/ou de la souris ? Nombre d'utilisateurs ?
+3 - Présence d'une partie audio ? Création des musiques/bruitages ?
+4 - Présence de menus ? Textuel ou graphique ?
+5 - Paramètres réglables par l'utilisateur ? Nom, difficulté, choix d'un personnage, ...
+6 - Evolutivité durant l'utilisation ? Différents niveaux, difficulté croissante, ...
+7 - Programmation complexe ? IA pour PNJ, adversaire joué par l'ordinateur, ...
+ 
+Ce cahier des charges doit être accessible en ligne grâce à un des liens fournis à la séance précédente.
