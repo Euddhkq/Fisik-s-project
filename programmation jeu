@@ -1,0 +1,43 @@
+import pygame
+pygame.init()
+ecran = pygame.display.set_mode((10, 10))
+
+background = pygame.image.load("background.jpg").convert()
+background_rect=background.get_rect()
+largeur= background_rect.width
+hauteur= background_rect.height
+ecran = pygame.display.set_mode((largeur, hauteur))
+pygame.display.set_caption("jeu fisik")
+image = pygame.image.load("image.jpg").convert()
+
+y,x=0,0
+
+
+clock= pygame.time.Clock()
+
+continuer = True
+while continuer :
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            continuer = False
+
+    pressed = pygame.key.get_pressed()
+    if pressed[pygame.K_LEFT]:
+        x-=1
+    if pressed[pygame.K_RIGHT]:
+        x+=1
+    if pressed[pygame.K_UP]:
+        y-=1
+    if pressed[pygame.K_DOWN]:
+        y+=1
+    
+    ecran.fill((255,255,255))
+    ecran.blit(background, (0,0))
+    ecran.blit(image, (x,y))
+    clock.tick(60)
+    pygame.display.flip()
+
+pygame.quit()
+
+
+
