@@ -39,5 +39,22 @@ while continuer :
 
 pygame.quit()
 
+#proposition pour ajouter animations:
+pressed = pygame.key.get_pressed()
+    if pressed[pygame.K_LEFT]:
+        x-=1
+        #image gauche
+    elif pressed[pygame.K_RIGHT]:
+        x+=1
+        #image droite
+    elif pressed[pygame.K_UP]:
+        y-=1
+        #image montée
+    elif pressed[pygame.K_DOWN]:
+        y+=1
+        #image descente
+    else:
+        #image pas mouvement
+#(mais je pense qu'il vaut mieux faire de l'orienté objet...)
 
 
