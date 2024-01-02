@@ -54,7 +54,7 @@ pressed = pygame.key.get_pressed()
         y+=1
         #image descente
     else:
-        #image pas mouvement
+        #image pas mouvement (on peut rajouter  autant d'elif qu'on veut)
 #(mais je pense qu'il vaut mieux faire de l'orienté objet...)
 
 
