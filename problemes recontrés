@@ -1,0 +1,6 @@
+1er pb: scinder la vitesse de deplacement et l'affichage des images
+        solution creation d'une variable compteur qui n'affiche qu'une seule image sur 20 (soit 3 images par seconde en 60 fps)
+2nd pb : latence lorsque l'on change de touche 
+
+3eme pb : afficher une image différentes lorsque l'on relache les touches 
+        solution ajout de key.up
