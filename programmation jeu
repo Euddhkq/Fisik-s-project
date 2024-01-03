@@ -2,17 +2,17 @@ import pygame
 pygame.init()
 ecran = pygame.display.set_mode((10, 10))
 
-background = pygame.image.load("background.jpg").convert()
+background = pygame.image.load("background.png").convert()
 background_rect=background.get_rect()
 largeur= background_rect.width
 hauteur= background_rect.height
 ecran = pygame.display.set_mode((largeur, hauteur))
 pygame.display.set_caption("jeu fisik")
-image = pygame.image.load("image.jpg").convert()
+image = pygame.image.load("image_DOWN.png").convert_alpha()
 
 y,x=0,0
-
-
+left,right,up,down=0,0,0,0
+compteur=20
 clock= pygame.time.Clock()
 
 continuer = True
@@ -24,13 +24,54 @@ while continuer :
     pressed = pygame.key.get_pressed()
     if pressed[pygame.K_LEFT]:
         x-=1
+        if compteur%20==0:
+            if left==0:
+                image = pygame.image.load("image_LEFT_0.png").convert_alpha()
+                left=1
+            elif left==1:
+                image = pygame.image.load("image_LEFT_1.png").convert_alpha()
+                left=0
+        compteur+=1
     if pressed[pygame.K_RIGHT]:
         x+=1
+        if compteur%20==0:
+            if right==0:
+                image = pygame.image.load("image_RIGHT_0.png").convert_alpha()
+                right=1
+            elif right==1:
+                image = pygame.image.load("image_RIGHT_1.png").convert_alpha()
+                right=0
+        compteur+=1
     if pressed[pygame.K_UP]:
         y-=1
+        if compteur%20==0:
+            if up==0:
+                image = pygame.image.load("image_UP_0.png").convert_alpha()
+                up=1
+            elif up==1:
+                image = pygame.image.load("image_UP_1.png").convert_alpha()
+                up=0
+        compteur+=1
     if pressed[pygame.K_DOWN]:
         y+=1
-    
+        if compteur%20==0:
+            if down==0:
+                image = pygame.image.load("image_DOWN_0.png").convert_alpha()
+                down=1
+            elif down==1:
+                image = pygame.image.load("image_DOWN_1.png").convert_alpha()
+                down=0
+        compteur+=1
+    elif event.type == pygame.KEYUP:
+        if event.key == pygame.K_LEFT:
+            image = pygame.image.load("image_LEFT.png").convert_alpha()
+        if event.key == pygame.K_RIGHT:
+            image = pygame.image.load("image_RIGHT.png").convert_alpha()
+        if event.key == pygame.K_UP:
+            image = pygame.image.load("image_UP.png").convert_alpha()
+        if event.key == pygame.K_DOWN:
+            image = pygame.image.load("image_DOWN.png").convert_alpha()
+
     ecran.fill((255,255,255))
     ecran.blit(background, (0,0))
     ecran.blit(image, (x,y))
@@ -38,23 +79,5 @@ while continuer :
     pygame.display.flip()
 
 pygame.quit()
-
-#proposition pour ajouter animations:
-pressed = pygame.key.get_pressed()
-    if pressed[pygame.K_LEFT]:
-        x-=1
-        #image gauche
-    elif pressed[pygame.K_RIGHT]:
-        x+=1
-        #image droite
-    elif pressed[pygame.K_UP]:
-        y-=1
-        #image montée
-    elif pressed[pygame.K_DOWN]:
-        y+=1
-        #image descente
-    else:
-        #image pas mouvement (on peut rajouter  autant d'elif qu'on veut)
-#(mais je pense qu'il vaut mieux faire de l'orienté objet...)
 
 
