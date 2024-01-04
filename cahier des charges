@@ -21,4 +21,7 @@ Votre cahier des charges devra notamment répondre aux questions suivantes :
 7 - Programmation complexe ? IA pour PNJ, adversaire joué par l'ordinateur, ...
     Oui pour les adversaires qui seront joués par l'ordinateur + tutoriel pour le premier combat.
  
-
+-----------------------------------------------------------------------------
+Commentaires sur le cahier des charges :
+Pygame n'est pas vraiment fait pour gérer plusieurs fenêtres en même temps. En général, on fait plutôt apparaître un cadre dans la fenêtre principale qui se comporte comme une seconde fenêtre.
+Je ne vois pas encore très bien de quel combat il s'agit mais codé un adversaire joué par l'ordinateur peut vite s'avérer très compliqué selon le type de combat.
