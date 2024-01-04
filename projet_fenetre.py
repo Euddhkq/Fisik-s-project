@@ -23,7 +23,7 @@ while continuer :
         if event.type == pygame.QUIT:
             continuer = False
 
-    mouvement = True
+    mouvement = False
     pressed = pygame.key.get_pressed()
     if pressed[pygame.K_LEFT] and x>=0:
         x-=3
