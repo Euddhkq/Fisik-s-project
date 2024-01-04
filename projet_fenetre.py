@@ -1,4 +1,5 @@
 import pygame
+
 pygame.init()
 ecran = pygame.display.set_mode((10, 10))
 
