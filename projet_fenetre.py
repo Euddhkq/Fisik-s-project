@@ -1,5 +1,4 @@
 import pygame
-
 pygame.init()
 ecran = pygame.display.set_mode((10, 10))
 
@@ -24,9 +23,11 @@ while continuer :
         if event.type == pygame.QUIT:
             continuer = False
 
+    mouvement = True
     pressed = pygame.key.get_pressed()
     if pressed[pygame.K_LEFT] and x>=0:
         x-=3
+        mouvement = True
         if compteur%20==0:
             if left==0:
                 image = pygame.image.load("image_LEFT_0.png").convert_alpha()
@@ -43,6 +44,7 @@ while continuer :
         compteur+=1
     if pressed[pygame.K_RIGHT] and x<= (largeur_fond - largeur_perso):
         x+=3
+        mouvement = True
         if compteur%20==0:
             if right==0:
                 image = pygame.image.load("image_RIGHT_0.png").convert_alpha()
@@ -59,6 +61,7 @@ while continuer :
         compteur+=1
     if pressed[pygame.K_UP]and y>=0:
         y-=3
+        mouvement = True
         if compteur%20==0:
             if up==0:
                 image = pygame.image.load("image_UP_0.png").convert_alpha()
@@ -69,6 +72,7 @@ while continuer :
         compteur+=1
     if pressed[pygame.K_DOWN] and x<= (hauteur_fond - hauteur_perso):
         y+=3
+        mouvement = True
         if compteur%20==0:
             if down==0:
                 image = pygame.image.load("image_DOWN_0.png").convert_alpha()
@@ -77,7 +81,7 @@ while continuer :
                 image = pygame.image.load("image_DOWN_1.png").convert_alpha()
                 down=0
         compteur+=1
-    elif event.type == pygame.KEYUP:
+    if event.type == pygame.KEYUP and mouvement == False:
         if event.key == pygame.K_LEFT:
             image = pygame.image.load("image_LEFT.png").convert_alpha()
         if event.key == pygame.K_RIGHT:
