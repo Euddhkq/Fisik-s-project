@@ -67,18 +67,30 @@ while continuer :
                 image = pygame.image.load("image_UP_0.png").convert_alpha()
                 up=1
             elif up==1:
+                image = pygame.image.load("image_UP.png").convert_alpha()
+                up=2
+            elif up==2:
                 image = pygame.image.load("image_UP_1.png").convert_alpha()
+                up=3
+            elif up==3:
+                image = pygame.image.load("image_UP.png").convert_alpha()
                 up=0
         compteur+=1
     if pressed[pygame.K_DOWN] and x<= (hauteur_fond - hauteur_perso):
         y+=3
         mouvement = True
-        if compteur%20==0:
+        if compteur%15==0:
             if down==0:
                 image = pygame.image.load("image_DOWN_0.png").convert_alpha()
                 down=1
             elif down==1:
+                image = pygame.image.load("image_DOWN.png").convert_alpha()
+                down=2
+            elif down==2:
                 image = pygame.image.load("image_DOWN_1.png").convert_alpha()
+                down=3
+            elif down==3:
+                image = pygame.image.load("image_DOWN.png").convert_alpha()
                 down=0
         compteur+=1
     if event.type == pygame.KEYUP and mouvement == False:
