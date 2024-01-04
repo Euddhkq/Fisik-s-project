@@ -25,27 +25,39 @@ while continuer :
 
     pressed = pygame.key.get_pressed()
     if pressed[pygame.K_LEFT] and x>=0:
-        x-=1
+        x-=3
         if compteur%20==0:
             if left==0:
                 image = pygame.image.load("image_LEFT_0.png").convert_alpha()
                 left=1
             elif left==1:
+                image = pygame.image.load("image_LEFT.png").convert_alpha()
+                left=2
+            elif left==2:
                 image = pygame.image.load("image_LEFT_1.png").convert_alpha()
+                left=3
+            elif left==3:
+                image = pygame.image.load("image_LEFT.png").convert_alpha()
                 left=0
         compteur+=1
     if pressed[pygame.K_RIGHT] and x<= (largeur_fond - largeur_perso):
-        x+=1
+        x+=3
         if compteur%20==0:
             if right==0:
                 image = pygame.image.load("image_RIGHT_0.png").convert_alpha()
                 right=1
             elif right==1:
+                image = pygame.image.load("image_RIGHT.png").convert_alpha()
+                right=2
+            elif right==2:
                 image = pygame.image.load("image_RIGHT_1.png").convert_alpha()
+                right=3
+            elif right==3:
+                image = pygame.image.load("image_RIGHT.png").convert_alpha()
                 right=0
         compteur+=1
     if pressed[pygame.K_UP]and y>=0:
-        y-=1
+        y-=3
         if compteur%20==0:
             if up==0:
                 image = pygame.image.load("image_UP_0.png").convert_alpha()
@@ -55,7 +67,7 @@ while continuer :
                 up=0
         compteur+=1
     if pressed[pygame.K_DOWN] and x<= (hauteur_fond - hauteur_perso):
-        y+=1
+        y+=3
         if compteur%20==0:
             if down==0:
                 image = pygame.image.load("image_DOWN_0.png").convert_alpha()
